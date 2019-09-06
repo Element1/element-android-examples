@@ -1,7 +1,6 @@
 <resources>
 
     <!-- Base application theme. -->
-
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
@@ -12,23 +11,21 @@
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
-        <item name="coordinatorLayoutStyle">@style/Widget.Design.CoordinatorLayout</item>
     </style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
-    <!-- DataForm -->
-
     <style name="DataFormText">
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:background">@android:color/transparent</item>
+        <item name="android:background">@android:color/white</item>
         <item name="android:paddingLeft">@dimen/activity_horizontal_margin</item>
         <item name="android:paddingRight">@dimen/activity_horizontal_margin</item>
-        <item name="android:textColor">@android:color/white</item>
-        <item name="android:textColorHint">#ccffffff</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textColorHint">@color/textColorHint</item>
+        <item name="android:textColorHighlight">@color/textColorHighlight</item>
     </style>
 
     <style name="DataFormEditText" parent="DataFormText">
@@ -42,26 +39,6 @@
         <item name="android:inputType">textCapWords</item>
         <item name="android:paddingTop">@dimen/signUpEditTextMargin</item>
         <item name="android:paddingBottom">@dimen/signUpEditTextMargin</item>
-    </style>
-
-    <style name="DataFormPin" parent="DataFormEditText">
-        <item name="android:inputType">numberPassword</item>
-        <item name="android:maxLength">4</item>
-    </style>
-
-    <style name="DataFormBar">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">@dimen/signUpFormBarHeight</item>
-        <item name="android:layout_marginLeft">@dimen/activity_horizontal_margin</item>
-        <item name="android:background">#555</item>
-    </style>
-
-    <style name="DataFormButton" parent="@style/WhiteTextButton">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
-        <item name="android:layout_marginLeft">@dimen/activity_horizontal_margin</item>
-        <item name="android:layout_marginRight">@dimen/activity_horizontal_margin</item>
     </style>
 
 </resources>

@@ -3,13 +3,12 @@
     <string name="first_name">First Name</string>
     <string name="last_name">Last Name (Optional)</string>
     <string name="enroll">Enroll</string>
-    <string name="continue_enrollment">Please continue creating your account</string>
+    <string name="enroll_first">Please enroll first</string>
     <string name="enroll_completed">User account created</string>
     <string name="enroll_cancelled">Enrollment cancelled</string>
     <string name="auth_cancelled">Authentication cancelled</string>
-    <string name="msg_fake">fake authentication</string>
-    <string name="msg_verified">verified %1$s</string>
-    <string name="msg_not_verified">not verified</string>
-    <string name="msg_try_again">Please try again</string>
-    <string name="msg_try_again_fake">Please try again.</string>
+    <string name="msg_fake">Fake authentication</string>
+    <string name="msg_verified">Verified %1$s</string>
+    <string name="msg_not_verified">Please try again</string>
+    <string name="msg_already_enrolled">%1$s will be deleted if enrolling with a new user</string>
 </resources>

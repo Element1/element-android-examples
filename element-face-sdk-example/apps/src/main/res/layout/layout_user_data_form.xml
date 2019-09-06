@@ -4,7 +4,7 @@
     android:layout_height="wrap_content"
     android:padding="20dp"
     android:orientation="vertical"
-    android:background="@drawable/home_background" >
+    android:background="@drawable/blue_gradient_bg" >
 
     <ImageView
         android:layout_width="wrap_content"
@@ -20,29 +20,29 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:orientation="vertical"
-        android:divider="@drawable/sign_in_box_divider"
+        android:divider="@android:drawable/divider_horizontal_dark"
         android:showDividers="middle"
-        android:background="@drawable/sign_in_box"
         android:descendantFocusability="beforeDescendants"
         android:focusableInTouchMode="true" >
 
         <EditText style="@style/DataFormEditTextCap"
             android:id="@+id/firstName"
-            android:textCursorDrawable="@drawable/edit_text_cursor"
+            android:textCursorDrawable="@drawable/abc_text_cursor_material"
             android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
             android:hint="@string/first_name" />
 
         <EditText style="@style/DataFormEditTextCap"
             android:id="@+id/lastName"
-            android:textCursorDrawable="@drawable/edit_text_cursor"
+            android:textCursorDrawable="@drawable/abc_text_cursor_material"
             android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
             android:hint="@string/last_name" />
 
     </LinearLayout>
 
     <Button
-        style="@style/DataFormButton"
         android:id="@+id/enroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_margin="20dp"
         android:text="@string/enroll" />

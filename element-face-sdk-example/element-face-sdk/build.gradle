@@ -1,2 +1,2 @@
 configurations.maybeCreate("default")
-artifacts.add("default", file('element-face-sdk-v1.fe001.[minor-version].aar'))
+artifacts.add("default", file('element-face-core-[VERSION].aar'))

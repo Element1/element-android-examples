@@ -2,9 +2,6 @@ package com.element.facex;
 
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v4.app.DialogFragment;
 import android.text.TextUtils;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
@@ -16,6 +13,11 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.DialogFragment;
+
+import com.element.camera.ProviderUtil;
 import com.element.camera.UserInfo;
 
 import java.util.HashMap;
@@ -94,6 +96,8 @@ public class UserDataFormFragment extends DialogFragment {
             Toast.makeText(mainActivity, R.string.error_empty_fields, Toast.LENGTH_SHORT).show();
             return;
         }
+
+        ProviderUtil.deleteAllUsers(mainActivity.getBaseContext(), BuildConfig.APPLICATION_ID);
 
         UserInfo userInfo = UserInfo.enrollNewUser(
                 mainActivity.getBaseContext(),
