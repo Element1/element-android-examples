@@ -1,0 +1,35 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    defaultConfig {
+        applicationId "com.element.element_web_ui"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 4
+        versionName "1.1.0"
+        ndk.abiFilters = ['armeabi-v7a', 'arm64-v8a']
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        buildConfigField "String", "ELEMENT_API_KEY", "\"${ELEMENT_API_KEY}\""
+        buildConfigField "String", "ELEMENT_CLIENT_ID", "\"${ELEMENT_CLIENT_ID}\""
+        buildConfigField "String", "ELEMENT_SERVER_URL", "\"${ELEMENT_SERVER_URL}\""
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+    }
+
+    flavorDimensions "all"
+}
+
+dependencies {
+    implementation project(':element-web-ui')
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'com.google.code.gson:gson:2.8.6'
+}

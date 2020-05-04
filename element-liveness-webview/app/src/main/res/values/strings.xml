@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Element Web Face Demo</string>
+    <string name="userIdHint">Input User Id</string>
+    <string name="firstNameHint">First Name</string>
+    <string name="lastNameHint">Last Name</string>
+    <string name="userId">userId</string>
+    <string name="firstName">firstName</string>
+    <string name="lastName">lastName</string>
+    <string name="cookie">cookie</string>
+    <string name="verify">verify</string>
+    <string name="enroll">enroll</string>
+    <string name="buttonTextVerify">Verify</string>
+    <string name="buttonTextEnroll">Enroll</string>
+</resources>

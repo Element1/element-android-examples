@@ -1,0 +1,3 @@
+include ':app'
+include ':element-web-ui'
+rootProject.name='element-web-ui'
