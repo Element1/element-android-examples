@@ -1,7 +1,0 @@
-<resources>
-    <string name="user_id">MOCK_USER_ID</string>
-    <string name="api_key">API_KEY</string>
-    <string name="api_url">API_URL</string>
-    
-    <string name="capture_failed">Please position your face inside the outline and follow the dots</string>
-</resources>

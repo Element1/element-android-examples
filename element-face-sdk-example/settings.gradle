@@ -1,4 +1,0 @@
-include ':apps'
-include ':element-face-sdk'
-include ':element-face-ui'
-rootProject.name='My Application'

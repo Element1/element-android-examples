@@ -1,2 +1,0 @@
-include ':apps'
-include ':element-fm-sdk'
